@@ -1,5 +1,9 @@
 # PySpark Notes
 
+#What is PySpark?
+- PySpark is Python API that lets me use Spark trough Python code.
+- What is Spark anyway? Apache Spark is the engine that processes and transform the data.
+
 ## Imports
 ```python
 from pyspark.sql import functions as F
