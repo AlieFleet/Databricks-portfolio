@@ -2,7 +2,7 @@
 
 ## Quick reference
 
-Add syntax and examples as you learn them. Prefer runnable, minimal examples.
+syntax and examples as I learn them. Prefer runnable, minimal examples.
 
 ### Select and filter
 ```sql
