@@ -35,8 +35,3 @@ LEFT JOIN table_b AS b
 - [ ] Window functions (`ROW_NUMBER`, `RANK`, `LAG`, `LEAD`)
 - [ ] CTEs (`WITH`)
 - [ ] `MERGE INTO`
-
-## My examples
-| Date | Concept | Example / notebook | Notes |
-|---|---|---|---|
-| YYYY-MM-DD |  |  |  |
