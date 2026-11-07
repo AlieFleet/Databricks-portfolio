@@ -1,6 +1,6 @@
 # Databricks Platform Notes
 
-Record platform-specific concepts and differences between your learning workspace and other environments.
+Record platform-specific concepts and differences between learning workspace and other environments.
 
 ## Workspace and notebooks
 - Workspace:
