@@ -1,0 +1,52 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+.databrickscfg
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local data and generated outputs (keep folder structure with .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Common large files
+*.csv
+*.parquet
+*.jsonl
+*.avro
+*.orc
+*.zip
+*.tar
+*.gz
+*.db
+*.sqlite
+*.whl
+
+# Exceptions: allow small, intentionally committed sample files by removing
+# or narrowing the relevant patterns above when a project needs them.
