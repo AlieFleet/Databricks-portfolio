@@ -11,14 +11,8 @@ from pyspark.sql import types as T
 ```
 
 ## Common DataFrame operations
-```
-## Common DataFrame operations
 
-```python
-df.printSchema()
-```
-
-Displays the DataFrame's column names, data types, and structure.
+`Displays the DataFrame's column names, data types, and structure.`
 
 ```python
 df_trimmed.show(3, truncate=False)
@@ -37,6 +31,8 @@ df_trimmed.show(df_trimmed.count(), truncate=False)
 - If the DataFrame contains 1,000 rows, it displays all 1,000 rows.
 
 ```python
+df.printSchema()
+df.summary()
 df.select("column_a", "column_b")
 df.filter(F.col("amount") > 0)
 df.groupBy("category").agg(F.count("*").alias("records"))
