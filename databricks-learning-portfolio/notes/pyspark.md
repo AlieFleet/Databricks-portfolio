@@ -32,6 +32,8 @@ df_trimmed.show(df_trimmed.count(), truncate=False)
 
 ```python
 df.printSchema()
+- Displays the DataFrame's column names, data types, and structure.
+
 df.summary()
 df.select("column_a", "column_b")
 df.filter(F.col("amount") > 0)
