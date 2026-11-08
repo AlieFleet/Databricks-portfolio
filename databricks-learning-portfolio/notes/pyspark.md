@@ -11,16 +11,16 @@ from pyspark.sql import types as T
 ```
 
 ## Common DataFrame operations
-```python
+```
 ## Common DataFrame operations
 
-```python
+```
 df.printSchema()
 ```
 
 Displays the DataFrame's column names, data types, and structure.
 
-```python
+```
 df_trimmed.show(3, truncate=False)
 ```
 
@@ -28,7 +28,7 @@ df_trimmed.show(3, truncate=False)
 - `truncate=False` means long text values won't be cut off.
 - Useful for quickly checking your data.
 
-```python
+```
 df_trimmed.show(df_trimmed.count(), truncate=False)
 ```
 
