@@ -36,11 +36,12 @@ df_trimmed.show(df_trimmed.count(), truncate=False)
 - `.show()` then displays that many rows.
 - If the DataFrame contains 1,000 rows, it displays all 1,000 rows.
 
+'''python
 df.select("column_a", "column_b")
 df.filter(F.col("amount") > 0)
 df.groupBy("category").agg(F.count("*").alias("records"))
 df.orderBy(F.col("amount").desc())
-
+'''
 
 ## Topics to practise
 - [ ] Read and write data
@@ -53,9 +54,3 @@ df.orderBy(F.col("amount").desc())
 - [ ] User-defined functions (understand trade-offs)
 - [ ] Partitioning and shuffles
 - [ ] Performance basics
-
-## Useful patterns
-Add short, tested examples here.
-
-## Gotchas
-- 
