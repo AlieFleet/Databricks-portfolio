@@ -15,9 +15,9 @@ from pyspark.sql import types as T
 df.printSchema()
 
 df_trimmed.show(3, truncate=False)
- '''- Displays only the first 3 rows of the DataFrame.
+ **- Displays only the first 3 rows of the DataFrame.**
  - truncate=False means long text values won't be cut off.
- - Useful for quickly checking your data.'''
+ - Useful for quickly checking your data.
 
 df_trimmed.show(df_trimmed.count(), truncate=False)
 - df_trimmed.count() counts the total number of rows in the DataFrame.
