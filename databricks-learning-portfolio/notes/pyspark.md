@@ -12,17 +12,28 @@ from pyspark.sql import types as T
 
 ## Common DataFrame operations
 ```python
+## Common DataFrame operations
+
+```python
 df.printSchema()
-'''
+```
 
-''' df_trimmed.show(3, truncate=False) '''
- - Displays only the first 3 rows of the DataFrame.
- - truncate=False means long text values won't be cut off.
- - Useful for quickly checking your data.
+Displays the DataFrame's column names, data types, and structure.
 
-''' df_trimmed.show(df_trimmed.count(), truncate=False) '''
-- df_trimmed.count() counts the total number of rows in the DataFrame.
-- .show() then displays that many rows.
+```python
+df_trimmed.show(3, truncate=False)
+```
+
+- Displays only the first 3 rows of the DataFrame.
+- `truncate=False` means long text values won't be cut off.
+- Useful for quickly checking your data.
+
+```python
+df_trimmed.show(df_trimmed.count(), truncate=False)
+```
+
+- `df_trimmed.count()` counts the total number of rows in the DataFrame.
+- `.show()` then displays that many rows.
 - If the DataFrame contains 1,000 rows, it displays all 1,000 rows.
 
 df.select("column_a", "column_b")
