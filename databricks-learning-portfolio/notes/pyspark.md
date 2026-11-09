@@ -33,6 +33,7 @@ df_trimmed.show(df_trimmed.count(), truncate=False)
 df.printSchema()
 ```
 - Displays the DataFrame's column names, data types, and structure.
+- run .printSchema() to check column's name and their attributes
 
 ```python
 df.describe()
