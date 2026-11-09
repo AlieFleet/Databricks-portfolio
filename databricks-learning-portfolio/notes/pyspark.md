@@ -12,8 +12,8 @@ from pyspark.sql.functions import col
 
 ## Common DataFrame operations
 
-`Displays the DataFrame's column names, data types, and structure.`
-`Remember that "df" is just an object's name to use function from imported library and can be anything`
+- Displays the DataFrame's column names, data types, and structure.
+- Remember that "df" is just an object's name to use function from imported library and can be anything
 
 ```python
 df_trimmed.show(3, truncate=False)
