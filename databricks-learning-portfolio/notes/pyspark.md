@@ -6,13 +6,14 @@
 
 ## Imports
 ```python
-from pyspark.sql import functions as F
-from pyspark.sql import types as T
+from pyspark.sql.functions import col
+
 ```
 
 ## Common DataFrame operations
 
 `Displays the DataFrame's column names, data types, and structure.`
+`Remember that "df" is just an object's name to use function from imported library and can be anything`
 
 ```python
 df_trimmed.show(3, truncate=False)
@@ -34,10 +35,18 @@ df.printSchema()
 - Displays the DataFrame's column names, data types, and structure.
 
 ```python
+df.describe()
+```
+- always returns exactly five rows:
+count, mean, stddev, min, max
+- describe() for a quick glance
+
+```python
 df.summary()
 ```
-- Generates descriptive statistics
-- such as count, mean, standard deviation, minimum, and maximum for numerical columns.
+- returns those same five plus the quartiles:
+count, mean, stddev, min, 25%, 50%, 75%, max
+- summary() whenever the median and quartile spread matter.
 
 ```python
 df.select("column_a", "column_b")
@@ -45,7 +54,7 @@ df.select("column_a", "column_b")
 - Selects only the specified columns from the DataFrame.
 
 ```python
-df.filter(F.col("amount") > 0)
+df.filter(col("amount") > 0)
 ```
 - Filters rows where the amount column contains values greater than 0.
 
@@ -56,9 +65,13 @@ df.groupBy("category").agg(F.count("*").alias("records"))
 - Renames the resulting count column to records.
 
 ```python
-df.orderBy(F.col("amount").desc())
+df.orderBy(col("amount").desc())
 ```
 - Sorts the DataFrame by amount in descending order (highest to lowest
+
+```python
+df.withColumn('new column's name', col('a') - col('b'))
+```
 
 ## Distinction to remember
 
