@@ -60,14 +60,14 @@ df.orderBy(F.col("amount").desc())
 ```
 - Sorts the DataFrame by amount in descending order (highest to lowest
 
-## Topics to practise
-- [ ] Read and write data
-- [ ] Schema inference vs explicit schemas
-- [ ] Select, filter, withColumn, drop, rename
-- [ ] Null handling and deduplication
-- [ ] Grouping and aggregation
-- [ ] Joins
-- [ ] Window functions
-- [ ] User-defined functions (understand trade-offs)
-- [ ] Partitioning and shuffles
-- [ ] Performance basics
+## Distinction to remember
+
+- Transformations (select, filter, orderBy, withColumn, …) are lazy — they return a new DataFrame you can keep chaining on.
+- Actions (show, count, collect, display, …) execute and return a Python value — show() specifically returns None, so nothing can follow it in a chain.
+  
+- The ordering must come before the show:
+``` python
+df_filtered.orderBy(col("release_year").asc()).show(truncate = False)
+```
+ — filtered movies sorted by year, then printed
+So: transform → transform → … → action last. 
