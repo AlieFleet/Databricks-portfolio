@@ -1,8 +1,13 @@
 # Spark SQL Notes
 
-## Quick reference
+### Distributed computing
+- process of splitting a large computational task into smaller subtasks,
+- executing them in parallel across multiple machines that work together as a single system.
 
-syntax and examples as I learn them. Prefer runnable, minimal examples.
+### Apache Spark
+- an open-source, distributed computing engine designed to process large-scale data quickly and efficiently.
+
+## SQL Syntax
 
 ### Select and filter
 ```sql
