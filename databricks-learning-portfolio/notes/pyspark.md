@@ -12,8 +12,8 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("StockPE").getOrCreate()
 ```
 
-- SparkSession allows you to interact with Spark and work with data (DataFrames, SQL, etc.).
-- Once created, spark becomes your main object for interacting with Spark.
+- SparkSession allows to interact with Spark and work with data (DataFrames, SQL, etc.).
+- Once created, spark becomes main object for interacting with Spark.
 
 | Code | Purpose | 
 |---|---|
