@@ -7,8 +7,16 @@
 ## Imports
 ```python
 from pyspark.sql.functions import col
+from pyspark.sql import SparkSession
 
+spark = SparkSession.builder.appName("StockPE").getOrCreate()
 ```
+
+- SparkSession allows you to interact with Spark and work with data (DataFrames, SQL, etc.).
+
+| Code | Purpose | 
+|---|---|
+|SparkSession.builder|	Starts building a Spark session.|
 
 ## Common DataFrame operations
 
