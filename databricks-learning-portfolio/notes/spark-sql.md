@@ -6,6 +6,7 @@
 
 ### Apache Spark
 - an open-source, distributed computing engine designed to process large-scale data quickly and efficiently.
+- a distributed compute engine abstracts the complexity of parallelism, letting devs focus on business logic.
 
 ## SQL Syntax
 
