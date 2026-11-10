@@ -13,10 +13,14 @@ spark = SparkSession.builder.appName("StockPE").getOrCreate()
 ```
 
 - SparkSession allows you to interact with Spark and work with data (DataFrames, SQL, etc.).
+- Once created, spark becomes your main object for interacting with Spark.
 
 | Code | Purpose | 
 |---|---|
-|SparkSession.builder|	Starts building a Spark session.|
+|`SparkSession.builder` |	Starts building a Spark session.|
+|`.appName("StockPE")` | Gives your Spark application the name StockPE.|
+|`.getOrCreate()` | Creates a new SparkSession or reuses an existing one.|
+|`spark =` | 	Stores the session in a variable called spark.|
 
 ## Common DataFrame operations
 
